@@ -1,0 +1,589 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:wght@500&display=swap');
+
+/* Common utilities */
+
+body{
+
+    margin: 0%;
+    padding: 0%;
+    background-color:#F3F1FF;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+/* Header */
+
+p{
+    color:#6C6C6C;
+    font-size: 12px;
+}
+.football{
+
+    background-color: #2D25A0; 
+    margin: 0%;
+    padding:0%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about{
+    
+   font-weight: 700;
+   font-size: 35px;
+   color: white;
+   margin-left: 20px;
+ 
+}
+.button{
+    
+    padding: 10px 24px 10px 24px;
+    margin-bottom: 0px;
+   
+    width: 100px;
+    text-decoration: none;
+    font-size: 12px;
+    
+    color: white;
+    
+    background-color:#E02C6D;
+    animation: sliding 1s ease-in-out 0.5s infinite alternate;
+    animation-play-state: paused;
+  
+}
+/* Animations */
+@keyframes sliding {
+
+    0%{
+    
+        background-color: #d46e0e6e;
+
+    }
+
+    25%{
+
+
+    }
+
+  50%{
+      background-color:rgba(56, 238, 238, 0.733);
+  }
+
+
+
+  
+    100% {  
+        background-color:rgba(0, 55, 156, 0.377);
+
+
+    }
+}
+
+.heading:hover .button{
+
+    animation-play-state: running;
+}
+
+
+.about .button{
+    display: flex;
+    justify-content: space-around;
+   
+     
+}
+.fa-sign-in-alt{
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.heading img{
+
+    width:556px;
+    height: 438px;
+    margin-top: 153px;
+    animation: sliding 1s ease-in-out 0.5s infinite alternate;
+    animation-play-state: paused;
+    
+    
+}
+.heading:hover img{
+
+    animation-play-state: running;
+}
+
+.heading, .about-highlights{
+
+    width: 1440px;
+    height: 677px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-evenly;
+   
+    
+    
+}
+
+/* ending of Header */
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+   
+} 
+/* Main */
+
+    
+/* Styling in Top Famous Players  */
+
+.players-container{
+
+    margin-top: 70px;
+}
+
+.famous-players{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+ 
+
+    
+    
+
+}
+    
+  .player{
+    background-color: #FFFFFF;
+    border: 1px solid white;
+    width: 330px;
+    height: 485px;
+    /* margin-top:50px; */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow:20px 0px 20px lightgray;
+}
+
+
+
+.player img{
+
+    width: 330px;
+}
+
+/* Ending of stylining in top famous players */
+
+
+
+/* styling in Highlighits */
+
+
+.about-highlights{
+
+   display: flex;
+
+}
+.highlights-info{
+    
+    width: 466px;
+    height: 309px;
+    margin-left: 50px;
+    
+}
+.highlights-details{
+    margin-bottom: 25px;
+}
+.highlights img{
+
+    width: 550px;
+    height: 410px;
+    margin-right:42px;
+}
+.highlights-info .button{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Ending of highlights styling */
+
+
+/* Styling in Top Teams */
+
+.container{
+   
+    margin-top: 0px;
+    background-color:#FFFFFF;
+    width: 1130px;
+    align-items: center;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+   
+}
+
+.about-winner{
+    
+    padding: 100px;
+    display: flex;
+
+    justify-content: space-around;
+    
+
+}
+
+.detail-width{
+    width: 50%;
+    
+}
+
+.winner-details{
+    
+
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 0%;
+
+    
+}
+
+.half-width img{
+
+    width: 300px;
+    height: 236px;
+    margin-bottom: 10px;
+    
+}
+
+
+.winner-details details{
+    display: block;
+    width: 50%;
+}   
+
+/* Adding horizontal line */
+hr {
+    border: 1px solid gray;
+    clear:both;
+    display: block;
+     width: 96%;               
+    
+    height: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  } 
+.team-heading{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+
+.top-teams{
+    padding: 40%;
+    
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 100px;
+    padding: 50px;
+    margin-left: 40px; 
+       
+   }
+
+
+   .team-logo img{
+
+    width: 200px;
+    height: 256px;
+}
+
+/* Ending of styling in top teams */
+
+
+
+/* Styling in clubs */
+
+.football-clubs{
+
+
+    
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 1180px;
+    height: 980px;
+    margin-bottom: 100px;
+    box-shadow: px 5px 5px lightslategray;
+  
+
+}
+   
+.top-clubs{
+
+    
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    padding: 10px;
+     
+    
+}
+
+
+
+
+
+.club{
+    
+    width: 360px;
+    height: 440px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px lightgray;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+
+  .club-name{
+    
+    margin-left: 80px;
+    margin-bottom: 0px;
+    
+} 
+.club-logo{
+
+    width:100%;
+  
+    
+   
+}
+.club-detail{
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color:#6C6C6C;
+} 
+
+/* Ending of clubs */
+
+
+ 
+/* Styling in Footer */
+
+.footer-container{
+    
+    width: 480.87px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 63px;
+}
+  .logo{
+  
+    width: 480px;
+    height: 110px;
+    display: flex;
+    justify-content:space-evenly;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding: 20px;
+  }
+
+
+.social-medias-links a{
+    text-decoration: none;
+    padding: 5px;
+}
+ 
+      
+  
+  .logo img{
+
+    width: 483px;
+    height: 180px;
+    margin: 20px;
+   
+   
+   
+  }
+  .width{
+  
+    padding: 20px;
+   
+  }
+
+  .copy-right{
+
+    font-size: 18px;
+    font-weight: 400;
+
+  }
+
+  .text-font{
+
+    font-family: 'Niconne', cursive;
+   
+    font-style:Regular;
+    Font-size: 72px;
+    color: #10437A;
+  }
+
+/* Ending of Footer */
+
+/* responsive added */
+@media only screen and (max-width: 688px){
+
+  
+    body{
+        direction: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0px;
+        padding: 0%;
+        margin-left: 10%;
+    }
+    main{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         
+    }
+    .football{
+        
+     
+
+        width:100%;
+        margin: 0%;
+        padding:0 -5%;
+      
+        
+    }
+
+    .heading{
+        
+        display:flex;
+        /* flex-direction: column ; */
+        justify-content: space-between;
+        align-items:center;
+        grid-column-gap: 10px ;
+        max-width: 100%;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+
+    .about, .banner{
+
+        width: 100%;
+    }
+    .heading img{
+
+        width: 70%;
+        height: 50%;
+        margin-top: 0%;
+    }
+    .first-heading{
+
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .famous-players{
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+    
+    .highlights-info{
+        margin-left: 0px;
+        padding: 0%;
+        width: 329px;
+        height: 299px;
+    }
+ 
+   main{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+    
+    .about-highlights{
+        
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .players-container{
+
+      
+
+        width: 100%;
+
+
+    }
+
+    /* .top-clubs{
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-highlights .highlight-image{
+    
+    margin-left: 3px;
+    width: 290px;
+    height:248px
+
+    }
+
+    .football-clubs{
+        width: 390px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+  .container{
+
+      margin-top: 0%;
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+
+  } */
+
+  
+
+  
+ 
+
+ 
+
+ 
+
+}
